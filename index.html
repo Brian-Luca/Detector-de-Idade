@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Idade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        Detector de Idade
+    </header>
+    <section>
+        <div id="ano" class="alinhar">
+            Ano de Nascimento:
+            <input type="text" maxlength="4" name="idade" id="idade"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        </div>
+        <div id="sobrepor">
+            <div id="alinhar" class="alinhar">
+                Gênero
+                <div id="radios" class="alinhar">
+                    <label for="masc">
+                        <input type="radio" id="masc" name="genero" value="true">
+                        Masculino
+                    </label>
+                    <label for="fem">
+                        <input type="radio" id="fem" name="genero" value="true">
+                        Feminino
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="button" id="botao" value="Detectar" onclick="detectar()">
+    </section>
+    <a href="https://twitter.com/Death_Draak" target="_blank">
+        <footer id="cop">
+            @Brian Luca
+        </footer>
+    </a>
+    <script src="js/efects.js"></script>
+</body>
+
+</html>

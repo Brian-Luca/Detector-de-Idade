@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: rgb(114, 17, 114);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    font-size: calc(1em + 5vmin);
+    font-weight: bold;
+    text-shadow: 1vmin 1vmin .2vmin black;
+    color: white;
+}
+
+section{
+    background-color: white;
+    box-shadow: 1vmin 1vmin 2vmin rgba(0, 0, 0, 0.5);
+    min-width: 50vh;
+    width: 30vw;
+    height: 50vh;
+    font-size: 3.5vh;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+
+.alinhar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#alinhar{
+    height: 15vh;
+    flex-flow: column;
+    align-items: center;
+}
+
+#idade{
+    width: calc(2em + 2vw);
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10%;
+}
+
+#idade:focus{
+    outline: none;
+    border-bottom: violet solid;
+
+}
+
+#botao{
+    font-size: calc(0.5em + 1vmin);
+    box-shadow: 0.2vmin .5vmin 0 black;
+    background: rgb(155, 26, 155);
+    border-radius: 10%;
+    border: 2px solid black;
+    color: white;
+    padding: 2vmin;
+    cursor: pointer;
+}
+
+#botao:active{
+    position:relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+#botao:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: calc(1em + 1vmin);
+    font-style: italic;
+    padding: 1.5vmin;
+    border: 1px solid cornsilk;
+    border-radius: 10vmin;
+    box-shadow: 0 0 1vmin black;
+}
+
+a:hover{
+    color: violet;
+    text-decoration: underline;
+}
+
+#imagem {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 25%;
+}
+
+#sobrepor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
